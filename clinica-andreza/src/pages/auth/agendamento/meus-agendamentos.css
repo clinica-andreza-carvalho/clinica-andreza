@@ -1,0 +1,80 @@
+body {
+    font-family: Montserrat, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: #fff;
+}
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+th {
+    background:rgb(241, 195, 204);
+    color: white;
+    font-weight: 600;
+}
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+tr:hover {
+    background: #e6f7ff;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #0099cc;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 2px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background:rgb(156, 0, 170);
+}
+.btn-cancelar {
+    background: #dc3545;
+}
+.btn-cancelar:hover {
+    background: #a71d2a;
+}
+.status {
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    min-width: 80px;
+}
+.status-confirmado { background-color: #28a745; color: #fff; }
+.status-pendente { background-color: #ffc107; color: #333; }
+.status-cancelado { background-color: #dc3545; color: #fff; }
+.back-btn {
+    display: block;
+    width: 220px;
+    margin: 30px auto 0;
+    text-align: center;
+    padding: 10px 0;
+    background: #555;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.back-btn:hover {
+    background: #333;
+}

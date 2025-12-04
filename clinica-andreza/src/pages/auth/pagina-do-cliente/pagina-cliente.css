@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ====================== HEADER ====================== */
+.header {
+    background-color: #f8e8ec;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    background-color: #ddaebc;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.logo-text h1 {
+    font-size: 22px;
+    color: #6a4e52;
+}
+
+.logo-text p {
+    font-size: 14px;
+    color: #555;
+}
+
+.social a {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #444;
+    text-decoration: none;
+}
+
+/* ====================== MAIN ====================== */
+.main {
+    padding: 40px 20px;
+}
+
+.bemvindo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bemvindo h2 {
+    font-size: 30px;
+    color: #6a4e52;
+    margin-bottom: 10px;
+}
+
+.bemvindo p {
+    color: #666;
+}
+
+/* ====================== PAINEL ====================== */
+.painel {
+    background: linear-gradient(145deg, #fceef2, #f9d9e0);
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.painel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.painel h3 {
+    margin-bottom: 25px;
+    color: #6a4e52;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.painel h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #d894a5;
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* ====================== FORMULÁRIO 2x2 ====================== */
+.dados-cliente {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.info label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.info input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 15px;
+    border: 1px solid #e8c1c9;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info input:focus {
+    border-color: #d894a5;
+    box-shadow: 0 4px 12px rgba(216, 148, 165, 0.25);
+}
+
+/* ====================== BOTÕES (GERAL) ====================== */
+.btn,
+.btn-detalhes,
+.acoes-agendamento .btn {
+    background-color: #d894a5;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-decoration: none; /* remove underline de links */
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover,
+.btn-detalhes:hover,
+.acoes-agendamento .btn:hover {
+    transform: translateY(-5px);
+    background-color: #e8b0c0;
+}
+
+.btn:active,
+.btn-detalhes:active,
+.acoes-agendamento .btn:active {
+    transform: translateY(-2px);
+}
+
+/* ====================== FORMULÁRIO BOTÕES CENTRALIZADOS ====================== */
+.acoes-form,
+.acoes-agendamento {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* ====================== AGENDAMENTOS ====================== */
+.agendamentos {
+    background-color: #fceef2;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+/* ====================== HISTÓRICO ====================== */
+.historico {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.historico h3 {
+    color: #6a4e52;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e8c1c9;
+    padding-bottom: 10px;
+}
+
+.tabela-historico {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabela-historico th, .tabela-historico td {
+    border-bottom: 1px solid #eee;
+    padding: 12px 10px;
+}
+
+.tabela-historico th {
+    background-color: #fceef2;
+    color: #6a4e52;
+    font-weight: 600;
+}
+
+/* ====================== FOOTER ====================== */
+.footer {
+    background-color: #f6f0ec;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer nav a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* ====================== MODAL ====================== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal.ativo {
+    display: flex !important;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+.modal-content h4 {
+    font-size: 22px;
+    color: #6a4e52;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.modal-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal-botoes .btn {
+    width: auto;
+}
+
+/* ====================== PRÓXIMO AGENDAMENTO ====================== */
+.proximo-agendamento {
+    margin-top: 30px;
+    background: #f0cfd5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+.proximo-agendamento h3 {
+    margin-bottom: 15px;
+    color: #000000;
+    text-align: center;
+}
+
+.agendamento-box {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 5px solid #0099cc;
+    margin-bottom: 15px;
+}
+
+.agendamento-box p {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.agendamento-box strong {
+    color: #333;
+}
+
+/* Status colorido */
+.status {
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+}
+
+.status-confirmado { background-color: #28a745; }
+.status-pendente { background-color: #ffc107; color: #333; }
+.status-cancelado { background-color: #dc3545; }
+
+/* ====================== ICONES ====================== */
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.6rem;
+    color: #fff;
+    background: linear-gradient(135deg, #e8c1c9, #d894a5);
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.back-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    background: linear-gradient(135deg, #d894a5, #e8c1c9);
+}
+
+/* ====================== STATUS MENSAGENS ====================== */
+.status-msg {
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.status-msg.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-msg.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* ====================== RESPONSIVO ====================== */
+@media (max-width: 768px) {
+    .dados-cliente {
+        grid-template-columns: 1fr;
+    }
+
+    .acoes-form,
+    .acoes-agendamento {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .acoes-form .btn,
+    .acoes-agendamento .btn {
+        width: 100%;
+    }
+}
+
+/* ====================== ANIMAÇÃO ====================== */
+@keyframes fadeIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

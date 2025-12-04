@@ -1,0 +1,26 @@
+/* BOTÃO VOLTAR AO TOPO */
+.btn-voltar-topo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #e8c1c9;
+    color: #6a4e52;
+    font-size: 22px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+    z-index: 999;
+  }
+  
+  .btn-voltar-topo:hover {
+    background-color: #d894a5;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  

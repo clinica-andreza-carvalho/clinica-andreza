@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Clínica Andreza Carvalho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./cadastro.css">
+</head>
+<body>
+
+  <dialog open>
+
+    <a href="../../../../index.html" class="back-icon">&#8592;</a>
+    
+    <div class="header">
+      <div class="logo-circle">
+        <img src="../../../assets/imagens-header/image/logo-clinica.png" alt="logo-clinica">
+      </div>
+      <div>
+        <h1 class="clinic-name">Clínica Andreza Carvalho</h1>
+        <p class="subtitle">Fisioterapeuta Dermatofuncional</p>
+      </div>
+    </div>
+
+    <form action="/clinica-andreza/src/PhP/login.php" method="POST">
+      <h2 style="color:#5a3e3e; margin-bottom: 20px;">Área de Login</h2>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+
+      <label for="password">Senha</label>
+      <input type="password" id="password" name="password" placeholder="**********" required />
+
+      <button type="button" class="forgot-password" onclick="window.location.href='esqueceuasenha.html'">Esqueceu a senha?</button>
+
+      <button type="submit" class="btn-submit">Entrar</button>
+    </form>
+
+    <!-- Links de registro e admin com mesmo estilo -->
+    <div class="register-section">
+      Ainda não possui conta?
+      <button type="button" onclick="window.location.href='cadastro.html'">Cadastrar</button>
+    </div>
+
+    <div class="register-section">
+      É administrador?
+      <button type="button" onclick="window.location.href='http:/localhost/clinica-andreza/src/pages/auth/adm/login-adm.php'">Login Admin</button>
+    </div>
+
+  </dialog>
+
+</body>
+</html>

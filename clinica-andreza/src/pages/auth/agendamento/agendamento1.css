@@ -1,0 +1,222 @@
+/* ====================== RESET ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ====================== HEADER ====================== */
+.header {
+    background-color: #f8e8ec;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #6a4e52;
+}
+
+.header p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ====================== CONTAINER ====================== */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ====================== TITULO ====================== */
+.container h2 {
+    font-size: 26px;
+    color: #6a4e52;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ====================== FORMULÁRIO ====================== */
+form {
+    background: #fceef2;
+    border-radius: 25px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px solid #e8c1c9;
+    margin-bottom: 20px;
+    font-size: 15px;
+    outline: none;
+}
+
+input[type="date"]:focus {
+    border-color: #d894a5;
+    box-shadow: 0 4px 12px rgba(216,148,165,0.25);
+}
+
+/* ====================== HORÁRIOS ====================== */
+.horarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.h-btn {
+    flex: 1 1 100px;
+    padding: 10px 0;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.btn-normal {
+    background-color: #d894a5;
+    color: #fff;
+}
+
+.btn-normal:hover {
+    background-color: #e8b0c0;
+    transform: translateY(-2px);
+}
+
+.btn-ocupado {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-selecionado {
+    border: 2px solid #6a4e52;
+}
+
+/* ====================== PRODUTOS ====================== */
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.produto-item {
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #e8c1c9;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.produto-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.produto-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.produto-item h4 {
+    font-size: 16px;
+    color: #6a4e52;
+    margin-bottom: 5px;
+}
+
+.produto-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ====================== BOTÕES CENTRALIZADOS ====================== */
+.form-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-verde {
+    background-color: #d894a5;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    width: 220px; /* mesmo tamanho */
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.btn-verde:hover {
+    background-color: #e8b0c0;
+    transform: translateY(-2px);
+}
+
+/* ====================== BOTÃO VOLTAR ====================== */
+.back-icon {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #e8c1c9, #d894a5);
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.back-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    background: linear-gradient(135deg, #d894a5, #e8c1c9);
+}
+
+/* ====================== RESPONSIVO ====================== */
+@media (max-width: 768px) {
+    .horarios {
+        flex-direction: column;
+    }
+    
+    .form-botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-verde {
+        width: 100%;
+    }
+}

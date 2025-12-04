@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #f8e8ec;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+  background-color: #ddaebc;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.logo-text h1 {
+  font-size: 22px;
+  color: #6a4e52;
+}
+
+.logo-text p {
+  font-size: 14px;
+  color: #555;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.social a {
+  margin-left: 10px;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.agendamento h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.calendario {
+  background-color: #fceef2;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.calendario h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.semana, .dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.dia {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dia:hover {
+  background-color: #e6c2cc;
+}
+
+.dia.inativo {
+  color: #bbb;
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.dia.selecionado {
+  background-color: #d894a5;
+  color: #fff;
+}
+
+.acoes {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #e8c1c9;
+  color: #333;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #d894a5;
+  color: #fff;
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.horarios {
+  background-color: #fceef2;
+  max-width: 600px;
+  margin: 30px auto 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.lista-horarios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn-horario {
+  background-color: #fff;
+  border: 2px solid #e8c1c9;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-horario:hover {
+  background-color: #e8c1c9;
+  border-color: #d894a5;
+}
+
+.btn-horario.selecionado {
+  background-color: #d894a5;
+  color: white;
+  border-color: #d894a5;
+}
+
+footer {
+  background-color: #f6f0ec;
+  padding: 30px 0 20px 0;
+  text-align: center;
+  font-size: 14px; 
+}
+
+footer nav a {
+  margin: 0 10px;
+  color: #555;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .semana, .dias {
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 14px;
+  }
+
+  .dia {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .logo-text h1 {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}

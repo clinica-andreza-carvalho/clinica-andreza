@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Clinica AC" content="width=device-width, initial-scale=1.0">
+    <title>Site Clinica AC</title>
+    
+    
+    <link rel="stylesheet" href="./src/style/header.css">
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="/src/style/footer.css">
+    <link rel="stylesheet" href="./src/style/cards.css">
+    
+    
+    <!-- fonte 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    
+
+    <!-- fonte 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Conteúdo da página (Acecibilidade) -->
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <header>
+
+    <div class="header-content">
+      <h1>Clinica Andreza Carvalho</h1>
+      <h2>Fisioterapeuta Dermatofuncional</h2>
+      <div class="logo">
+          <img src="./src/assets/imagens-header/image/logo-clinica.png" alt="logo-clinica">  
+      </div>
+
+<!-- mudar para php quando estiver pronto o banco -->
+<a href="./src/pages/auth/cadastro/login.html" class="classe-login">
+  Ir para o Login
+</a>
+
+  </header>
+
+<main> 
+  <section class="before-after-section">
+    <div class="before-after-container">
+      <div class="before-after-image">
+        <div class="carousel-container">
+          
+          
+          <!-- Slides -->
+          <div class="carousel-slide active">
+            <img src="./src/assets/imagens-main/antesEdepois.jpg" alt="Resultado 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="./src/assets/imagens-main/6-antes-e-depois-sculptra.png" alt="Resultado 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="./src/assets/imagens-main/3-antes-e-depois-sculptra.png" alt="Resultado 3">
+          </div>
+          
+          
+          <!-- Setas fora da imagem -->
+          <button class="carousel-btn prev">&#10094;</button>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
+        
+        
+        <!-- Indicadores (bolinhas) -->
+        <div class="carousel-indicators">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+      <div class="before-after-text">
+        <h3>Antes e Depois das Transformações</h3>
+        <p>
+          Na Clinica Andreza Carvalho, acreditamos no poder da transformação. Nosso compromisso em realçar a beleza natural e a confiança é exemplificado pelos notáveis ​​resultados antes e depois alcançados por nossos clientes.
+        </p>
+        
+        <div class="stats">
+          <div class="stat-box">
+            <strong>10+</strong><br>Anos de Experiência
+          </div>
+          <div class="stat-box">
+            <strong>500+</strong><br>Clientes Satisfeitos
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </section>
+  
+  <hr class="linha-meio-main">
+
+    <!-- Serviços -->
+    <section class="services-section" id="services">
+      <div class="services-container">
+          <h4 class="section-subtitle">SERVIÇOS</h4>
+          <h2 class="section-title">Sempre oferecemos o melhor serviço para você</h2>
+
+          <div class="service-cards">
+
+  <!-- Card 1 -->
+  <div class="service-card">
+      <div class="card-inner">
+          <!-- Frente -->
+          <div class="card-front">
+              <img src="./src/assets/imagens-main/errorxd.png" alt="Body Care">
+              <div class="service-label">CUIDADOS COM O CORPO</div>
+          </div>
+          <!-- Verso -->
+          <div class="card-back">
+              <h3>CUIDADOS COM O CORPO</h3>
+              <p>Oferecemos tratamentos corporais para realçar sua beleza e bem-estar.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="service-card">
+      <div class="card-inner">
+          <div class="card-front">
+              <img src="./src/assets/imagens-main/errorxd.png" alt="Consulta">
+              <div class="service-label">CONSULTORIA DE BELEZA</div>
+          </div>
+          <div class="card-back">
+              <h3>CONSULTORIA DE BELEZA</h3>
+              <p>Nossos especialistas oferecem dicas e planos personalizados para você.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="service-card">
+      <div class="card-inner">
+          <div class="card-front">
+              <img src="./src/assets/imagens-main/errorxd.png" alt="Produtos">
+              <div class="service-label">PRODUTOS DE BELEZA</div>
+          </div>
+          <div class="card-back">
+              <h3>PRODUTOS DE BELEZA</h3>
+              <p>Temos produtos selecionados para cuidar da sua pele e cabelo.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+          <div class="botao-consulta-d">
+              <a href="./src/pages/auth/cadastro/login.html" target="_blank" class="botao-consulta">
+                  Agende sua consulta
+              </a>
+          </div>
+      </div>
+  </section>
+  
+  <section class="faq-section">
+    
+
+    <h2>Perguntas? Nós temos as respostas.</h2>
+    <p class="faq-subtitle">
+      Explore nossa seção de perguntas frequentes para obter respostas rápidas a perguntas comuns sobre nossos serviços, agendamentos e muito mais. Sua jornada de beleza começa aqui.
+    </p>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">Que serviços você oferece?</button>
+        <div class="faq-answer">Oferecemos uma ampla gama de tratamentos de pele, faciais e corporais para realçar sua beleza natural.</div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Como posso agendar uma consulta?</button>
+        <div class="faq-answer">Você pode agendar através do nosso contato de WhatsApp.</div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Vocês oferecem consultas antes dos tratamentos?</button>
+        <div class="faq-answer">Sim, oferecemos consultas para avaliar as suas necessidades específicas e recomendar tratamentos e rotinas de cuidados de pele personalizados.</div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Seus serviços são seguros e adequados para todos os tipos de pele?</button>
+        <div class="faq-answer">Mas é claro! Todos os tratamentos são seguros e adaptados para cada tipo de pele.</div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">Teria problema se eu cancelasse em cima da hora?</button>
+        <div class="faq-answer">Dependendo do tempo, sim. Por favor, avise com pelo menos 24 horas de antecedência para cancelamentos ou remarcações.</div>
+      </div>
+    </div>
+    
+    
+  </section>  
+</main>
+
+
+  <!-- <footer>
+   <div class="header-content">
+      <h1>Clinica Andreza Carvalho</h1>
+
+      <hr class="linha-meio">
+
+      <h2>Clínica Andreza Carvalho © 2025 by CAC is licensed under CC BY-NC-ND 4.0</h2>
+
+
+      <nav class="social-icons">
+        <a href="#" target="_blank">
+          <img src="./src/assets/imagens-header/image/WHATSAPP.png" alt="botao-consulta-d">
+        </a>
+        
+        <a href="https://www.instagram.com/sua_pagina" target="_blank">
+          <img src="./src/assets/imagens-header/image/INSTAGRAM.png" alt="Instagram">
+        </a>
+        
+        <a href="https://www.facebook.com/sua_pagina" target="_blank">
+          <img src="./src/assets/imagens-header/image/FACEBOOK.png" alt="Facebook">
+        </a>
+      </nav>
+    </div>
+  </footer> -->
+
+  <script src="./src/js/javascript/script.js"></script>
+</body>
+</html>

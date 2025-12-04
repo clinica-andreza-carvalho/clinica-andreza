@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background-color: #fff8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+
+  dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    background: #fafcfe;
+    padding: 35px 47px;
+  }
+
+  /* Logo e topo */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .logo-circle {
+    background-color: #dca7a7;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    box-shadow: 0 0 6px #dca7a7;
+  }
+
+  .logo-circle svg {
+    width: 40px;
+    height: 40px;
+    fill: white;
+  }
+
+  .clinic-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #5a3e3e;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+    color: #6e5b5b;
+    letter-spacing: 0.05em;
+    margin-top: 3px;
+  }
+
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #7f5a5a;
+  }
+
+  input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #dca7a7;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #a66a6a;
+    background-color: #fff0f0;
+  }
+
+  .btn-submit {
+    background-color: #dca7a7;
+    color: white;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    font-weight: 600;
+  }
+
+  .btn-submit:hover {
+    background-color: #bf8686;
+  }
+
+  .forgot-password {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #a66a6a;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+
+  .register-section {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #7f5a5a;
+  }
+
+  .register-section button {
+    background: none;
+    border: none;
+    color: #dca7a7;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 1rem;
+  }
+
+  .register-section button:hover {
+    text-decoration: underline;
+  }
+  
+  img {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+
+  }
+
+  .back-icon {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 1.7rem;
+    color: #7f5a5a;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: opacity 0.25s, transform 0.25s;
+  }
+  
+  .back-icon:hover {
+    opacity: 0.9;
+    transform: translateX(-2px);
+  }
