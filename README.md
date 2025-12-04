@@ -70,9 +70,9 @@ Aqui, cada tratamento é pensado para respeitar a individualidade de cada pessoa
 
 <img width="1433" height="632" alt="Peguntas e Respostas" src="https://github.com/user-attachments/assets/7cbd38b5-ce6d-4a64-829f-dab2a568790a" />
 
-### 📌 Página de Login
+### 📌 Página de Login Usuário/Adm
 
-<img width="1912" height="837" alt="Página de Login" src="https://github.com/user-attachments/assets/22804755-d4eb-4675-8005-f54fca003d55" />
+<img width="1908" height="944" alt="image" src="https://github.com/user-attachments/assets/7855a241-dffc-459f-bdf3-85c8bdc1c4f2" />
 
 ### 📌 Página de Cadastro   
 
